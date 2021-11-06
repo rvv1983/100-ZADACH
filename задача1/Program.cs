@@ -5,3 +5,4 @@ if (b==a*a)
 {
     System.Console.WriteLine("b есть квадрат a");
 }
+//финиш
