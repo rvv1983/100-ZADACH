@@ -1,6 +1,16 @@
 ﻿// Даны два числа. Показать большее и меньшее число
-int a = 5;
-int b = 7;
-max = a;
-if(b>a); max=b;
-Console.WriteLine(max);
+int a = 4;
+int b = 6;
+int max = 0;
+int min = 0;
+if (a>b)
+{
+    max=a;min=b;
+}
+else
+{
+    max=b;min=a;
+}
+Console.WriteLine(max);Console.WriteLine("^ максимальное число");
+Console.WriteLine(min);Console.WriteLine("^ минимальное число");
+//финиш
