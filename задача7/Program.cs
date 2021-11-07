@@ -11,3 +11,4 @@ else
     Console.WriteLine("Не совсем четное");
 }
 Console.Write("благодарю за обращение, надеюсь угадал");
+Console.Write("финиш");
