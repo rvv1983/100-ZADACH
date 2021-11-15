@@ -10,4 +10,3 @@ class programm
     }
 }
 // финиш
-//1
