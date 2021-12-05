@@ -1,12 +1,23 @@
-﻿// По двум заданным числам проверять является ли первое квадратом второго 
-int a =5;
-int b = 25;
-if (b==a*a)
+﻿int[] arr = new int[100];
+Console.Write("Search necessary number : ");
+int userNumber = Convert.ToInt32(Console.ReadLine());
+
+Random rnd = new Random();
+int i;
+for (i = 0; i < arr.Length; i++)
 {
-System.Console.WriteLine("b есть квадрат a ");
+    arr[i] = rnd.Next(1, 100);
+    Console.Write(i + ":" + arr[i] + " ");
 }
-else
+for (i = 0; i < arr.Length; i++)
 {
-    System.Console.WriteLine("b не является квадратом a");
+    if (arr[i] == userNumber)
+    {
+        Console.WriteLine($"\n We found your number. this is at position {i}");
+        break;
+    }
 }
-//финиш !!!
+if (i == arr.Length)
+{
+    Console.WriteLine("\n Element not founded");
+}
